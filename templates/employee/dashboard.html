@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}Employee Dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="h3 mb-0">Employee Dashboard</h1>
+            <p class="text-muted">Welcome back, {{ employee.first_name }}!</p>
+        </div>
+        <div>
+            <a href="{{ url_for('employee.calculate_tax') }}" class="btn btn-primary">
+                <i class="fas fa-calculator me-2"></i>Calculate Tax
+            </a>
+        </div>
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="row g-4 mb-4">
+        <!-- Total Calculations Card -->
+        <div class="col-xl-4 col-md-6">
+            <div class="card border-start border-4 border-primary h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-muted mb-2">Total Calculations</h6>
+                            <h4 class="mb-0">{{ stats.total_calculations }}</h4>
+                            <small class="text-muted">All time</small>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-3 rounded">
+                            <i class="fas fa-calculator text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest Tax Amount Card -->
+        <div class="col-xl-4 col-md-6">
+            <div class="card border-start border-4 border-success h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-muted mb-2">Latest Tax Amount</h6>
+                            <h4 class="mb-0">₹{{ "{:,.2f}".format(stats.latest_tax_amount) if stats.latest_tax_amount else 0 }}</h4>
+                            <small class="text-muted">Last calculation</small>
+                        </div>
+                        <div class="bg-success bg-opacity-10 p-3 rounded">
+                            <i class="fas fa-rupee-sign text-success"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Current Tax Regime Card -->
+        <div class="col-xl-4 col-md-6">
+            <div class="card border-start border-4 border-info h-100">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <h6 class="text-muted mb-2">Current Tax Regime</h6>
+                            <h4 class="mb-0">{{ stats.current_regime.title() if stats.current_regime else 'Not Set' }}</h4>
+                            <small class="text-muted">Your preferred regime</small>
+                        </div>
+                        <div class="bg-info bg-opacity-10 p-3 rounded">
+                            <i class="fas fa-file-invoice text-info"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Recent Calculations Table -->
+        <div class="col-xl-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Recent Calculations</h5>
+                </div>
+                <div class="card-body">
+                    {% if recent_calculations %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Gross Income</th>
+                                    <th>Deductions</th>
+                                    <th>Tax Amount</th>
+                                    <th>Regime</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for calc in recent_calculations %}
+                                <tr>
+                                    <td>{{ calc.calculation_date.strftime('%Y-%m-%d %H:%M') }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.gross_income) }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.deductions) }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.tax_amount) }}</td>
+                                    <td><span class="badge bg-primary">{{ calc.tax_regime.title() }}</span></td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-muted mb-0">No calculations yet. Start by calculating your tax!</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Tax Distribution -->
+        <div class="col-xl-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Tax Regime Usage</h5>
+                </div>
+                <div class="card-body">
+                    {% if regime_distribution.labels %}
+                    <canvas id="regimeChart"></canvas>
+                    {% else %}
+                    <p class="text-muted mb-0">No tax regime data available.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Tax Regime Distribution Chart
+        {% if regime_distribution and regime_distribution.labels %}
+        const regimeCtx = document.getElementById('regimeChart');
+        if (regimeCtx) {
+            new Chart(regimeCtx.getContext('2d'), {
+                type: 'doughnut',
+                data: {
+                    labels: JSON.parse('{{ regime_distribution.labels | tojson | safe }}'),
+                    datasets: [{
+                        data: JSON.parse('{{ regime_distribution.data | tojson | safe }}'),
+                        backgroundColor: ['#0d6efd', '#198754'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+        {% endif %}
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,280 @@
+2024-11-21 21:42:16,148 [INFO] database:16: Creating database tables...
+2024-11-21 21:42:16,149 [ERROR] database:90: Database initialization failed: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-21 21:42:41,615 [INFO] database:16: Creating database tables...
+2024-11-21 21:42:41,668 [INFO] database:21: Initializing tax rules...
+2024-11-21 21:42:41,676 [INFO] database:63: Successfully initialized tax rules
+2024-11-21 21:42:41,904 [INFO] database:83: Successfully created default admin account
+2024-11-21 21:44:03,804 [INFO] database:16: Creating database tables...
+2024-11-21 21:44:03,804 [ERROR] database:90: Database initialization failed: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-21 21:46:25,331 [INFO] database:21: Creating database tables...
+2024-11-21 21:46:25,382 [INFO] database:26: Initializing tax rules...
+2024-11-21 21:46:25,387 [INFO] database:68: Successfully initialized tax rules
+2024-11-21 21:46:25,622 [INFO] database:88: Successfully created default admin account
+2024-11-21 21:46:49,418 [INFO] database:21: Creating database tables...
+2024-11-21 21:46:49,419 [ERROR] database:95: Database initialization failed: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-21 21:49:25,390 [INFO] database:21: Creating database tables...
+2024-11-21 21:49:25,428 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 21:49:25,428 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-21 21:49:41,069 [INFO] database:21: Creating database tables...
+2024-11-21 21:49:41,069 [ERROR] database:95: Database initialization failed: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-21 21:51:02,274 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:51:02] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 21:51:02,298 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:51:02] "GET /login HTTP/1.1" 200 -
+2024-11-21 21:51:02,590 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:51:02] "GET /static/css/styles.css HTTP/1.1" 200 -
+2024-11-21 21:51:02,628 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:51:02] "GET /static/js/common.js HTTP/1.1" 200 -
+2024-11-21 21:51:03,922 [WARNING] app:92: 404 error: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+2024-11-21 21:51:03,927 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:51:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-11-21 21:51:35,519 [INFO] flask_wtf.csrf:263: The CSRF token is missing.
+2024-11-21 21:51:35,522 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:51:35] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-11-21 21:52:11,592 [INFO] flask_wtf.csrf:263: The CSRF token is missing.
+2024-11-21 21:52:11,593 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:52:11] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-11-21 21:54:36,861 [INFO] database:21: Creating database tables...
+2024-11-21 21:54:36,862 [ERROR] database:95: Database initialization failed: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-21 21:54:49,801 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:54:49] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 21:54:49,815 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:54:49] "GET /login HTTP/1.1" 200 -
+2024-11-21 21:54:50,115 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:54:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 21:54:50,122 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:54:50] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 21:55:06,721 [INFO] flask_wtf.csrf:263: The CSRF token is missing.
+2024-11-21 21:55:06,722 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 21:55:06] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-11-21 21:57:06,520 [INFO] database:31: Database file path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-21 21:57:06,521 [INFO] database:32: Creating database tables...
+2024-11-21 21:57:06,521 [ERROR] database:113: Database initialization failed: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-21 22:01:13,515 [INFO] database:31: Database file path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-21 22:01:13,516 [INFO] database:39: Created database file
+2024-11-21 22:01:13,517 [INFO] database:47: Creating database tables...
+2024-11-21 22:01:13,572 [INFO] database:52: Initializing tax rules...
+2024-11-21 22:01:13,581 [INFO] database:94: Successfully initialized tax rules
+2024-11-21 22:01:13,839 [INFO] database:114: Successfully created default admin account
+2024-11-21 22:02:24,891 [INFO] database:31: Database file path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-21 22:02:24,892 [INFO] database:47: Creating database tables...
+2024-11-21 22:02:24,927 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 22:02:24,927 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-21 22:02:39,387 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:39] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:02:39,410 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:39] "GET /login HTTP/1.1" 200 -
+2024-11-21 22:02:39,708 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:02:39,784 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:39] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:02:57,371 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-21 22:02:57,385 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:57] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:02:57,393 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:57] "GET /login HTTP/1.1" 200 -
+2024-11-21 22:02:57,470 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:57] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:02:57,470 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:02:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:03:04,592 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:03:04] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:03:04,606 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:03:04] "GET /login HTTP/1.1" 200 -
+2024-11-21 22:03:04,673 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:03:04] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:03:04,674 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:03:04] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:05:22,385 [INFO] database:31: Database file path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-21 22:05:22,385 [INFO] database:47: Creating database tables...
+2024-11-21 22:05:22,428 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 22:05:22,429 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-21 22:05:54,950 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:05:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-21 22:05:54,963 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:05:54] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:05:54,990 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:05:54] "GET /login HTTP/1.1" 200 -
+2024-11-21 22:05:55,246 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:05:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:05:55,257 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:05:55] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:06:10,625 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:06:10] "POST /login HTTP/1.1" 200 -
+2024-11-21 22:06:10,690 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:06:10] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:06:10,691 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:06:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:06:28,371 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:06:28] "POST /login HTTP/1.1" 200 -
+2024-11-21 22:06:28,441 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:06:28] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:06:28,442 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:06:28] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:08:44,435 [INFO] database:31: Database file path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-21 22:08:44,436 [INFO] database:39: Created database file
+2024-11-21 22:08:44,436 [INFO] database:47: Creating database tables...
+2024-11-21 22:08:44,496 [INFO] database:52: Initializing tax rules...
+2024-11-21 22:08:44,502 [INFO] database:94: Successfully initialized tax rules
+2024-11-21 22:08:44,730 [ERROR] database:117: Error creating default admin account: (sqlite3.IntegrityError) NOT NULL constraint failed: admin.name
+[SQL: INSERT INTO admin (username, email, name, password_hash, created_at, last_login, is_active, is_super_admin) VALUES (?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('admin', 'admin@example.com', None, 'pbkdf2:sha256:600000$iVMNwBXc8wu8pwK6$055f77f8358bb24ccb136d1f556db9d092629f8470a1900bd5316b0b6011f21e', '2024-11-21 16:38:44.730518', None, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-21 22:08:44,731 [ERROR] database:121: Database initialization failed: (sqlite3.IntegrityError) NOT NULL constraint failed: admin.name
+[SQL: INSERT INTO admin (username, email, name, password_hash, created_at, last_login, is_active, is_super_admin) VALUES (?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('admin', 'admin@example.com', None, 'pbkdf2:sha256:600000$iVMNwBXc8wu8pwK6$055f77f8358bb24ccb136d1f556db9d092629f8470a1900bd5316b0b6011f21e', '2024-11-21 16:38:44.730518', None, 1, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-11-21 22:10:20,334 [INFO] database:31: Database file path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-21 22:10:20,335 [INFO] database:39: Created database file
+2024-11-21 22:10:20,335 [INFO] database:47: Creating database tables...
+2024-11-21 22:10:20,383 [INFO] database:52: Initializing tax rules...
+2024-11-21 22:10:20,390 [INFO] database:94: Successfully initialized tax rules
+2024-11-21 22:10:20,647 [INFO] database:116: Default admin account created successfully
+2024-11-21 22:10:20,656 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 22:10:20,656 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-21 22:10:48,769 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:10:48] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:10:48,813 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:10:48] "GET /login HTTP/1.1" 200 -
+2024-11-21 22:10:49,178 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:10:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:10:49,279 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:10:49] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:11:08,588 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:11:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-21 22:11:08,604 [ERROR] root:18: Error in admin dashboard route: admin/dashboard.html
+2024-11-21 22:11:08,609 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:11:08] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+2024-11-21 22:11:08,699 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:11:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:11:08,704 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:11:08] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:12:44,936 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:12:44] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:12:44,967 [ERROR] root:18: Error in admin dashboard route: admin/dashboard.html
+2024-11-21 22:12:44,970 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:12:44] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+2024-11-21 22:12:45,328 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:12:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:12:45,380 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:12:45] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:16:22,536 [INFO] database:31: Database file path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-21 22:16:22,538 [INFO] database:39: Created database file
+2024-11-21 22:16:22,538 [INFO] database:47: Creating database tables...
+2024-11-21 22:16:22,593 [INFO] database:52: Initializing tax rules...
+2024-11-21 22:16:22,600 [INFO] database:94: Successfully initialized tax rules
+2024-11-21 22:16:22,844 [INFO] database:116: Default admin account created successfully
+2024-11-21 22:16:22,854 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-21 22:16:22,855 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-21 22:16:49,689 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:49] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:16:49,718 [ERROR] root:26: Error in admin dashboard route: type object 'TaxCalculation' has no attribute 'created_at'
+2024-11-21 22:16:49,739 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:49] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+2024-11-21 22:16:49,869 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:49] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:16:49,873 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:49] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:16:54,742 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:54] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:16:54,760 [ERROR] root:26: Error in admin dashboard route: type object 'TaxCalculation' has no attribute 'created_at'
+2024-11-21 22:16:54,762 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:54] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+2024-11-21 22:16:54,876 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:16:54,878 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:54] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:16:56,654 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:56] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:16:56,669 [ERROR] root:26: Error in admin dashboard route: type object 'TaxCalculation' has no attribute 'created_at'
+2024-11-21 22:16:56,671 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:56] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+2024-11-21 22:16:56,751 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:56] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:16:56,759 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:16:56] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:17:00,566 [ERROR] root:26: Error in admin dashboard route: type object 'TaxCalculation' has no attribute 'created_at'
+2024-11-21 22:17:00,568 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:17:00] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+2024-11-21 22:17:00,628 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:17:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:17:00,632 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:17:00] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:30:58,473 [INFO] root:70: Logging configured successfully
+2024-11-21 22:33:51,554 [INFO] root:70: Logging configured successfully
+2024-11-21 22:34:03,681 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:03] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:34:03,705 [ERROR] root:26: Error in admin dashboard route: type object 'TaxCalculation' has no attribute 'created_at'
+2024-11-21 22:34:03,707 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:03] "[35m[1mGET /admin/dashboard HTTP/1.1[0m" 500 -
+2024-11-21 22:34:03,837 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:34:03,909 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:03] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:34:07,178 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-11-21 22:34:07,191 [ERROR] app:1414: Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/auth.py", line 100, in login
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login.html
+2024-11-21 22:34:07,195 [ERROR] app:104: 500 error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-21 22:34:07,196 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:07] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-11-21 22:34:07,300 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:07] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:34:07,311 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:07] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-21 22:34:11,084 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:11] "[32mGET / HTTP/1.1[0m" 302 -
+2024-11-21 22:34:11,093 [ERROR] app:1414: Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/auth.py", line 100, in login
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login.html
+2024-11-21 22:34:11,094 [ERROR] app:104: 500 error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-21 22:34:11,095 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:11] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-11-21 22:34:11,169 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-21 22:34:11,177 [INFO] werkzeug:187: 127.0.0.1 - - [21/Nov/2024 22:34:11] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:08:45,756 [ERROR] app:1414: Exception on /login [GET]
+Traceback (most recent call last):
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/auth.py", line 100, in login
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 64, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: login.html
+2024-11-22 08:08:45,757 [ERROR] app:104: 500 error: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.
+2024-11-22 08:08:45,758 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:08:45] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2024-11-22 08:08:46,092 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:08:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:08:46,105 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:08:46] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -

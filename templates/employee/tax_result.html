@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Tax Calculation Result{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title mb-0">Tax Calculation Result</h4>
+                </div>
+                <div class="card-body">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }}">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+
+                    <div class="mb-4">
+                        <h5>Summary</h5>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th>Gross Income</th>
+                                        <td class="text-end">₹{{ "{:,.2f}".format(calculation.gross_income) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total Deductions</th>
+                                        <td class="text-end">₹{{ "{:,.2f}".format(calculation.deductions) }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Taxable Income</th>
+                                        <td class="text-end">₹{{ "{:,.2f}".format(calculation.taxable_income) }}</td>
+                                    </tr>
+                                    <tr class="table-primary">
+                                        <th>Total Tax</th>
+                                        <td class="text-end fw-bold">₹{{ "{:,.2f}".format(calculation.tax_amount) }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>Tax Breakdown</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Income Range</th>
+                                        <th>Tax Rate</th>
+                                        <th>Income in Bracket</th>
+                                        <th>Tax Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for bracket in tax_breakdown %}
+                                    <tr>
+                                        <td>{{ bracket.bracket }}</td>
+                                        <td>{{ bracket.rate }}%</td>
+                                        <td class="text-end">₹{{ "{:,.2f}".format(bracket.income_in_bracket) }}</td>
+                                        <td class="text-end">₹{{ "{:,.2f}".format(bracket.tax_amount) }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <h5>Effective Tax Rate</h5>
+                        <p class="mb-0">Your effective tax rate is 
+                           <strong>{{ "{:.1f}%".format(calculation.tax_amount / calculation.gross_income * 100) }}</strong>
+                           of your gross income.</p>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <a href="{{ url_for('employee.calculate_tax') }}" class="btn btn-primary">Calculate Another</a>
+                        <a href="{{ url_for('employee.calculation_history') }}" class="btn btn-outline-secondary">View History</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

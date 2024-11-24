@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - Income Tax Calculator{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mb-4">Welcome, {{ current_user.name }}!</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Quick Actions</h5>
+                    <div class="list-group">
+                        <a href="{{ url_for('main.tax_calculator') }}" class="list-group-item list-group-item-action">
+                            <i class="ri-calculator-line"></i> Calculate Tax
+                        </a>
+                        <a href="{{ url_for('main.history') }}" class="list-group-item list-group-item-action">
+                            <i class="ri-history-line"></i> View History
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tax Saving Tips</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="ri-checkbox-circle-line text-success"></i>
+                            Maximize your Section 80C investments (up to ₹1.5L)
+                        </li>
+                        <li class="mb-2">
+                            <i class="ri-checkbox-circle-line text-success"></i>
+                            Consider NPS contributions for additional tax benefits
+                        </li>
+                        <li class="mb-2">
+                            <i class="ri-checkbox-circle-line text-success"></i>
+                            Utilize HRA benefits if you're paying rent
+                        </li>
+                        <li class="mb-2">
+                            <i class="ri-checkbox-circle-line text-success"></i>
+                            Track medical expenses for Section 80D benefits
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Recent Calculations</h5>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Income</th>
+                                    <th>Tax Amount</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for calc in recent_calculations %}
+                                <tr>
+                                    <td>{{ calc.created_at.strftime('%Y-%m-%d %H:%M') }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.income_data.get('annual_income', 0)) }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.tax_result.get('total_tax', 0)) }}</td>
+                                    <td>
+                                        <a href="{{ url_for('main.report', calculation_id=calc.id) }}" class="btn btn-sm btn-primary">
+                                            <i class="ri-file-text-line"></i> View Report
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% else %}
+                                <tr>
+                                    <td colspan="4" class="text-center">No calculations yet</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

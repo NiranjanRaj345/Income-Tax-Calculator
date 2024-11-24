@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block title %}Tax Calculation History{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <!-- Filters -->
+        <div class="col-12 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Filters</h5>
+                </div>
+                <div class="card-body">
+                    <form method="get" action="{{ url_for('admin.calculation_history') }}" class="row g-3">
+                        <div class="col-md-3">
+                            <label for="start_date" class="form-label">Start Date</label>
+                            <input type="date" class="form-control" id="start_date" name="start_date" 
+                                   value="{{ filters.start_date }}">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="end_date" class="form-label">End Date</label>
+                            <input type="date" class="form-control" id="end_date" name="end_date" 
+                                   value="{{ filters.end_date }}">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="min_amount" class="form-label">Min Amount</label>
+                            <input type="number" step="0.01" class="form-control" id="min_amount" name="min_amount" 
+                                   value="{{ filters.min_amount }}">
+                        </div>
+                        <div class="col-md-3">
+                            <label for="max_amount" class="form-label">Max Amount</label>
+                            <input type="number" step="0.01" class="form-control" id="max_amount" name="max_amount" 
+                                   value="{{ filters.max_amount }}">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="search_name" class="form-label">Search by Name</label>
+                            <input type="text" class="form-control" id="search_name" name="search_name" 
+                                   value="{{ filters.search_name }}" placeholder="Enter name...">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Apply Filters</button>
+                            <a href="{{ url_for('admin.calculation_history') }}" class="btn btn-secondary">Clear Filters</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Table -->
+        <div class="col-12 mb-4">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="card-title mb-0">Calculation History</h5>
+                    <div>
+                        <a href="{{ url_for('admin.export_calculation_history', format='csv') }}{{ '?' + request.query_string.decode() if request.query_string else '' }}" 
+                           class="btn btn-primary btn-sm">
+                            <i class="fas fa-file-csv me-2"></i>Export as CSV
+                        </a>
+                        <a href="{{ url_for('admin.export_calculation_history', format='pdf') }}{{ '?' + request.query_string.decode() if request.query_string else '' }}" 
+                           class="btn btn-secondary btn-sm">
+                            <i class="fas fa-file-pdf me-2"></i>Export as PDF
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    {% if calculations %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                    <th>Gross Income</th>
+                                    <th>Tax Amount</th>
+                                    <th>Net Income</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for calc in calculations %}
+                                <tr>
+                                    <td>{{ calc.name }}</td>
+                                    <td>{{ calc.date.strftime('%Y-%m-%d') }}</td>
+                                    <td>{{ calc.time }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.gross_income) }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.tax_amount) }}</td>
+                                    <td>₹{{ "{:,.2f}".format(calc.net_income) }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-muted mb-0">No calculations found matching the specified criteria.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add datatable functionality if needed
+    // You can add more interactive features here
+});
+</script>
+{% endblock %}

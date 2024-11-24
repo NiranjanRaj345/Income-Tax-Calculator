@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Reports{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row">
+        <!-- Date Range -->
+        <div class="col-12 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Date Range</h5>
+                    <p class="text-muted">
+                        From {{ start_date.strftime('%Y-%m-%d') }} to {{ end_date.strftime('%Y-%m-%d') }}
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Calculations Chart -->
+        <div class="col-12 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Daily Calculations</h5>
+                </div>
+                <div class="card-body">
+                    {% if daily_calculations %}
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Number of Calculations</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for calc in daily_calculations %}
+                                <tr>
+                                    <td>{{ calc['date'].strftime('%Y-%m-%d') }}</td>
+                                    <td>{{ calc['count'] }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-muted mb-0">No calculations found in the selected date range.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Export Options -->
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title mb-0">Export Data</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2 d-md-flex">
+                        <a href="{{ url_for('admin.export_report', format='csv') }}" class="btn btn-primary">
+                            Export as CSV
+                        </a>
+                        <a href="{{ url_for('admin.export_report', format='pdf') }}" class="btn btn-secondary">
+                            Export as PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add any JavaScript for charts or interactivity here
+});
+</script>
+{% endblock %}

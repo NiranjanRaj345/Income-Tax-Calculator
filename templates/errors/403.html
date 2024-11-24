@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}403 - Forbidden{% endblock %}
+
+{% block content %}
+<div class="error-container">
+    <div class="error-content">
+        <i class="ri-lock-line"></i>
+        <h1>403</h1>
+        <h2>Access Forbidden</h2>
+        <p>You don't have permission to access this page.</p>
+        <a href="{{ url_for('index') }}" class="btn btn-primary">
+            <i class="ri-home-line"></i>
+            Go Home
+        </a>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    text-align: center;
+}
+
+.error-content {
+    padding: 2rem;
+}
+
+.error-content i {
+    font-size: 64px;
+    color: #dc3545;
+}
+
+.error-content h1 {
+    font-size: 72px;
+    margin: 1rem 0;
+    color: #343a40;
+}
+
+.error-content h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+.error-content p {
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.error-content .btn i {
+    font-size: 16px;
+    margin-right: 8px;
+    color: white;
+}
+</style>
+{% endblock %}

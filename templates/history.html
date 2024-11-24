@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History - Income Tax Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="nav-brand">
+                <i class="ri-calculator-line"></i>
+                Income Tax Calculator
+            </a>
+            <div class="nav-links">
+                <a href="home.html" class="nav-link"><i class="ri-home-4-line"></i> Home</a>
+                <a href="calculator.html" class="nav-link"><i class="ri-calculator-line"></i> Calculator</a>
+                <a href="history.html" class="nav-link active"><i class="ri-history-line"></i> History</a>
+                <a href="profile.html" class="nav-link"><i class="ri-user-line"></i> Profile</a>
+                <a href="#" onclick="logout()" class="nav-link"><i class="ri-logout-box-line"></i> Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Calculation History</h2>
+                <div class="header-actions">
+                    <button onclick="clearHistory()" class="btn btn-secondary">
+                        <i class="ri-delete-bin-line"></i>
+                        Clear History
+                    </button>
+                </div>
+            </div>
+            
+            <div id="historyList" class="history-list">
+                <!-- History items will be dynamically added here -->
+                <div class="empty-state" id="emptyHistory">
+                    <i class="ri-history-line"></i>
+                    <p>No calculations yet</p>
+                    <a href="./calculator" class="btn btn-primary">
+                        Make a Calculation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Item Template -->
+    <template id="historyItemTemplate">
+        <div class="history-item card">
+            <div class="history-header">
+                <div class="history-meta">
+                    <span class="date"></span>
+                    <span class="regime-badge"></span>
+                </div>
+                <div class="history-actions">
+                    <button onclick="deleteCalculation(this)" class="btn-icon" title="Delete">
+                        <i class="ri-delete-bin-line"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="history-details">
+                <div class="detail-item">
+                    <span class="detail-label">Income</span>
+                    <span class="detail-value income"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Tax</span>
+                    <span class="detail-value tax"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Age Group</span>
+                    <span class="detail-value age"></span>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="js/common.js"></script>
+    <script src="js/history.js"></script>
+</body>
+</html>

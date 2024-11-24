@@ -1,0 +1,426 @@
+{% extends "base.html" %}
+
+{% block title %}Calculate Tax{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-4">
+    <div class="row">
+        <!-- Tax Calculator Section (65%) -->
+        <div class="col-lg-8">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-white text-white">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-calculator me-2"></i>Calculate Your Income Tax
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <form method="POST" id="taxCalculatorForm" class="needs-validation" novalidate>
+                        {{ form.hidden_tag() }}
+                        
+                        <!-- Tax Regime Selection -->
+                        <div class="mb-4">
+                            <h5 class="mb-3">
+                                <i class="fas fa-balance-scale me-2"></i>Tax Regime
+                            </h5>
+                            <div class="d-flex gap-4">
+                                {% for subfield in form.tax_regime %}
+                                <div class="form-check">
+                                    {{ subfield(class="form-check-input") }}
+                                    {{ subfield.label(class="form-check-label") }}
+                                </div>
+                                {% endfor %}
+                            </div>
+                            <small class="text-muted">
+                                Choose between old regime (with deductions) or new regime (with lower tax rates but no deductions)
+                            </small>
+                        </div>
+
+                        <!-- Income Details Section -->
+                        <div class="mb-4">
+                            <h5 class="mb-3">
+                                <i class="fas fa-money-bill-wave me-2"></i>Income Details
+                            </h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        {{ form.monthly_income(class="form-control currency-input", id="monthly_income", placeholder="Monthly Income") }}
+                                        {{ form.monthly_income.label }}
+                                        <div class="invalid-feedback">
+                                            Please enter your monthly income
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        {{ form.bonus(class="form-control currency-input", id="bonus", placeholder="Annual Bonus") }}
+                                        {{ form.bonus.label }}
+                                        <div class="invalid-feedback">
+                                            Please enter your annual bonus (if any)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deductions Section -->
+                        <div class="mb-4" id="deductionsSection">
+                            <h5 class="mb-3">
+                                <i class="fas fa-hand-holding-usd me-2"></i>Tax Deductions
+                                <small class="text-muted">(Only applicable for Old Regime)</small>
+                            </h5>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        {{ form.investment_80c(class="form-control currency-input", id="investment_80c", placeholder="80C Investments") }}
+                                        {{ form.investment_80c.label }}
+                                        <div class="form-text">Max limit: ₹1,50,000</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        {{ form.medical_insurance(class="form-control currency-input", id="medical_insurance", placeholder="Medical Insurance") }}
+                                        {{ form.medical_insurance.label }}
+                                        <div class="form-text">Max limit: ₹25,000</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        {{ form.home_loan_interest(class="form-control currency-input", id="home_loan_interest", placeholder="Home Loan Interest") }}
+                                        {{ form.home_loan_interest.label }}
+                                        <div class="form-text">Max limit: ₹2,00,000</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        {{ form.education_loan_interest(class="form-control currency-input", id="education_loan_interest", placeholder="Education Loan Interest") }}
+                                        {{ form.education_loan_interest.label }}
+                                        <div class="form-text">No upper limit</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calculator me-2"></i>Calculate Tax
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tax Slabs Information (35%) -->
+        <div class="col-lg-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-white text-white">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-table me-2"></i>Tax Slabs Information
+                    </h4>
+                </div>
+                <div class="card-body p-0">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-old-tab" data-bs-toggle="tab" data-bs-target="#nav-old" type="button" role="tab">
+                                Old Regime
+                            </button>
+                            <button class="nav-link" id="nav-new-tab" data-bs-toggle="tab" data-bs-target="#nav-new" type="button" role="tab">
+                                New Regime
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content p-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-old" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Income Range</th>
+                                            <th>Tax Rate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Up to ₹2,50,000</td>
+                                            <td>Nil</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₹2,50,001 - ₹5,00,000</td>
+                                            <td>5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₹5,00,001 - ₹10,00,000</td>
+                                            <td>20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Above ₹10,00,000</td>
+                                            <td>30%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-3">
+                                <h6 class="fw-bold">Available Deductions:</h6>
+                                <ul class="list-unstyled small">
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Section 80C: Up to ₹1,50,000</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Medical Insurance: Up to ₹25,000</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Home Loan Interest: Up to ₹2,00,000</li>
+                                    <li><i class="fas fa-check-circle text-success me-2"></i>Education Loan Interest: No limit</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-new" role="tabpanel">
+                            <div class="table-responsive">
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Income Range</th>
+                                            <th>Tax Rate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Up to ₹3,00,000</td>
+                                            <td>Nil</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₹3,00,001 - ₹6,00,000</td>
+                                            <td>5%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₹6,00,001 - ₹9,00,000</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₹9,00,001 - ₹12,00,000</td>
+                                            <td>15%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>₹12,00,001 - ₹15,00,000</td>
+                                            <td>20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Above ₹15,00,000</td>
+                                            <td>30%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-3">
+                                <div class="alert alert-info small mb-0">
+                                    <i class="fas fa-info-circle me-2"></i>
+                                    New regime offers lower tax rates but does not allow most deductions and exemptions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% if calculation_result %}
+    <!-- Tax Calculation Results -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h4 class="card-title mb-0">
+                        <i class="fas fa-file-invoice-dollar me-2"></i>Tax Calculation Results
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <!-- Summary -->
+                        <div class="col-md-6">
+                            <h5 class="mb-3">Summary</h5>
+                            <table class="table table-sm">
+                                <tr>
+                                    <th>Annual Income:</th>
+                                    <td>₹{{ "{:,.2f}".format(calculation_result.annual_income) }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Total Deductions:</th>
+                                    <td>₹{{ "{:,.2f}".format(calculation_result.total_deductions) }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Taxable Income:</th>
+                                    <td>₹{{ "{:,.2f}".format(calculation_result.taxable_income) }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Base Tax:</th>
+                                    <td>₹{{ "{:,.2f}".format(calculation_result.tax_amount) }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Surcharge:</th>
+                                    <td>₹{{ "{:,.2f}".format(calculation_result.surcharge) }}</td>
+                                </tr>
+                                <tr>
+                                    <th>Health & Education Cess:</th>
+                                    <td>₹{{ "{:,.2f}".format(calculation_result.cess) }}</td>
+                                </tr>
+                                <tr class="table-primary">
+                                    <th>Total Tax Liability:</th>
+                                    <td>₹{{ "{:,.2f}".format(calculation_result.total_tax) }}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <!-- Tax Breakdown -->
+                        <div class="col-md-6">
+                            <h5 class="mb-3">Tax Breakdown ({{ calculation_result.regime }} Regime)</h5>
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Income Bracket</th>
+                                            <th>Rate</th>
+                                            <th>Tax Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for slab in calculation_result.tax_breakdown %}
+                                        <tr>
+                                            <td>{{ slab.bracket }}</td>
+                                            <td>{{ slab.rate }}%</td>
+                                            <td>₹{{ "{:,.2f}".format(slab.tax_amount) }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+{{ super() }}
+<script>
+    // Format currency with Indian Rupee symbol and number system
+    function formatCurrency(input) {
+        // Get raw value and clean it
+        let value = input.value;
+        if (typeof value === 'string') {
+            // Remove currency symbols, commas and spaces
+            value = value.replace(/[₹,\s]/g, '');
+            // Remove all non-digit characters except decimal point
+            value = value.replace(/[^\d.]/g, '');
+        }
+        
+        if (!value) {
+            input.value = '';
+            input.setAttribute('data-value', '0');
+            return;
+        }
+
+        // Handle decimal points
+        let parts = value.split('.');
+        if (parts.length > 2) {
+            parts = [parts[0], parts.slice(1).join('')];
+        }
+        if (parts[1]) {
+            parts[1] = parts[1].slice(0, 2); // Max 2 decimal places
+        }
+        value = parts.join('.');
+
+        // Convert to number and format
+        let num = parseFloat(value);
+        if (!isNaN(num)) {
+            // Store raw value for form submission
+            input.setAttribute('data-value', num.toString());
+            // Format for display
+            input.value = new Intl.NumberFormat('en-IN', {
+                style: 'currency',
+                currency: 'INR',
+                maximumFractionDigits: 2,
+                minimumFractionDigits: 0
+            }).format(num);
+        } else {
+            input.value = '';
+            input.setAttribute('data-value', '0');
+        }
+    }
+
+    // Initialize currency inputs
+    document.querySelectorAll('.currency-input').forEach(input => {
+        // Format on input
+        input.addEventListener('input', function() {
+            formatCurrency(this);
+        });
+
+        // Show raw value on focus
+        input.addEventListener('focus', function() {
+            if (this.disabled) return;
+            let value = this.getAttribute('data-value') || '0';
+            if (value === '0') {
+                this.value = '';
+            } else {
+                this.value = value;
+            }
+        });
+
+        // Reformat on blur
+        input.addEventListener('blur', function() {
+            if (this.disabled) return;
+            formatCurrency(this);
+        });
+
+        // Format initial value if present
+        if (input.value) {
+            formatCurrency(input);
+        } else {
+            input.setAttribute('data-value', '0');
+        }
+    });
+
+    // Handle form submission
+    document.getElementById('taxCalculatorForm').addEventListener('submit', function(e) {
+        document.querySelectorAll('.currency-input').forEach(input => {
+            if (input.disabled) {
+                input.value = '0';
+            } else {
+                let value = input.getAttribute('data-value') || '0';
+                input.value = value;
+            }
+        });
+    });
+
+    // Handle tax regime change
+    document.querySelectorAll('input[name="tax_regime"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            const deductionsSection = document.getElementById('deductionsSection');
+            const deductionInputs = document.querySelectorAll('#deductionsSection .currency-input');
+            
+            if (this.value === 'old') {
+                deductionsSection.classList.remove('d-none');
+                deductionInputs.forEach(input => {
+                    input.disabled = false;
+                    input.required = false;
+                });
+            } else {
+                deductionsSection.classList.add('d-none');
+                deductionInputs.forEach(input => {
+                    input.disabled = true;
+                    input.required = false;
+                    input.value = '';
+                    input.setAttribute('data-value', '0');
+                });
+            }
+        });
+    });
+
+    // Initialize tax regime on page load
+    window.addEventListener('load', function() {
+        const selectedRegime = document.querySelector('input[name="tax_regime"]:checked');
+        if (selectedRegime) {
+            selectedRegime.dispatchEvent(new Event('change'));
+        }
+    });
+</script>
+{% endblock %}

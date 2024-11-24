@@ -1,0 +1,412 @@
+2024-11-22 08:14:23,096 [INFO] root:70: Logging configured successfully
+2024-11-22 08:15:41,914 [INFO] root:70: Logging configured successfully
+2024-11-22 08:16:23,599 [INFO] root:70: Logging configured successfully
+2024-11-22 08:16:45,676 [INFO] root:70: Logging configured successfully
+2024-11-22 08:17:15,935 [INFO] root:70: Logging configured successfully
+2024-11-22 08:18:00,279 [INFO] root:70: Logging configured successfully
+2024-11-22 08:20:00,496 [INFO] root:70: Logging configured successfully
+2024-11-22 08:20:00,496 [INFO] __main__:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:20:00,524 [INFO] __main__:60: Database URI: sqlite:///data/tax_calculator.db
+2024-11-22 08:20:00,524 [INFO] __main__:68: Database directory: /home/monk/Documents/capstone/income-tax-calculator (copy)/data
+2024-11-22 08:20:00,525 [INFO] __main__:69: Database path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-22 08:20:00,525 [INFO] __main__:74: Created database directory: /home/monk/Documents/capstone/income-tax-calculator (copy)/data
+2024-11-22 08:20:00,526 [ERROR] __main__:82: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:23:39,856 [INFO] root:70: Logging configured successfully
+2024-11-22 08:23:39,857 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:23:39,880 [INFO] app:60: Database URI: sqlite:///data/tax_calculator.db
+2024-11-22 08:23:39,881 [INFO] app:68: Database directory: /home/monk/Documents/capstone/income-tax-calculator (copy)/data
+2024-11-22 08:23:39,881 [INFO] app:69: Database path: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
+2024-11-22 08:23:39,881 [INFO] app:74: Created database directory: /home/monk/Documents/capstone/income-tax-calculator (copy)/data
+2024-11-22 08:23:39,883 [ERROR] app:82: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:23:39,891 [ERROR] flask_migrate:113: Error: Directory migrations already exists and is not empty
+2024-11-22 08:24:27,945 [INFO] root:70: Logging configured successfully
+2024-11-22 08:24:27,945 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:24:27,974 [ERROR] app:62: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:24:27,981 [ERROR] flask_migrate:113: Error: Directory migrations already exists and is not empty
+2024-11-22 08:25:14,797 [INFO] root:70: Logging configured successfully
+2024-11-22 08:25:14,798 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:25:14,827 [ERROR] app:62: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:25:33,533 [INFO] root:70: Logging configured successfully
+2024-11-22 08:25:33,534 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:25:33,564 [ERROR] app:62: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:26:31,104 [INFO] root:70: Logging configured successfully
+2024-11-22 08:26:31,104 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:26:31,134 [ERROR] app:62: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:27:08,112 [INFO] root:70: Logging configured successfully
+2024-11-22 08:27:08,113 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:27:08,141 [ERROR] app:62: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:27:58,742 [INFO] root:70: Logging configured successfully
+2024-11-22 08:27:58,742 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:27:58,760 [ERROR] app:62: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:29:40,207 [INFO] root:70: Logging configured successfully
+2024-11-22 08:29:40,207 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:29:40,231 [ERROR] app:62: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:31:13,993 [INFO] root:70: Logging configured successfully
+2024-11-22 08:31:13,993 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:31:14,020 [INFO] app:60: Successfully created database tables
+2024-11-22 08:31:14,027 [ERROR] flask_migrate:113: Error: Directory migrations already exists and is not empty
+2024-11-22 08:31:53,057 [INFO] root:70: Logging configured successfully
+2024-11-22 08:31:53,058 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:31:53,088 [INFO] app:60: Successfully created database tables
+2024-11-22 08:32:23,849 [INFO] root:70: Logging configured successfully
+2024-11-22 08:32:23,850 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:32:23,889 [INFO] app:60: Successfully created database tables
+2024-11-22 08:32:58,970 [INFO] root:70: Logging configured successfully
+2024-11-22 08:32:58,970 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:32:59,009 [INFO] app:60: Successfully created database tables
+2024-11-22 08:34:28,285 [INFO] root:70: Logging configured successfully
+2024-11-22 08:34:28,286 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:34:28,317 [INFO] app:60: Successfully created database tables
+2024-11-22 08:36:05,285 [INFO] root:70: Logging configured successfully
+2024-11-22 08:36:05,286 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:36:05,317 [INFO] app:60: Successfully created database tables
+2024-11-22 08:36:05,333 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-22 08:36:05,333 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-22 08:36:05,342 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:36:06,270 [INFO] root:70: Logging configured successfully
+2024-11-22 08:36:06,271 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:36:06,306 [INFO] app:60: Successfully created database tables
+2024-11-22 08:36:06,318 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:36:06,326 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:36:47,879 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:47] "GET / HTTP/1.1" 200 -
+2024-11-22 08:36:47,975 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:47] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:36:48,092 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:48] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:36:54,019 [ERROR] routes.auth:59: Error in login route: 'form' is undefined
+2024-11-22 08:36:54,041 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:54] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
+2024-11-22 08:36:54,167 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:54] "GET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-11-22 08:36:54,187 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:54] "GET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-11-22 08:36:54,705 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:54] "GET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-11-22 08:36:54,814 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:36:54] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-11-22 08:37:13,018 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:13] "GET / HTTP/1.1" 200 -
+2024-11-22 08:37:21,484 [ERROR] routes.auth:103: Error in register route: 'form' is undefined
+2024-11-22 08:37:21,504 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:21] "[35m[1mGET /auth/register HTTP/1.1[0m" 500 -
+2024-11-22 08:37:21,606 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:21] "GET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-11-22 08:37:21,610 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:21] "GET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-11-22 08:37:22,074 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:22] "GET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-11-22 08:37:22,216 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:22] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-11-22 08:37:28,199 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:28] "GET / HTTP/1.1" 200 -
+2024-11-22 08:37:31,485 [ERROR] routes.auth:59: Error in login route: 'form' is undefined
+2024-11-22 08:37:31,497 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:31] "[35m[1mGET /auth/login HTTP/1.1[0m" 500 -
+2024-11-22 08:37:31,619 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:31] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-11-22 08:37:31,623 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:31] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-11-22 08:37:31,920 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:37:31] "[36mGET /auth/login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-11-22 08:39:05,330 [INFO] werkzeug:187:  * Detected change in '/home/monk/Documents/capstone/income-tax-calculator (copy)/routes/auth.py', reloading
+2024-11-22 08:39:05,613 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:39:06,152 [INFO] root:70: Logging configured successfully
+2024-11-22 08:39:06,152 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:39:06,167 [INFO] app:60: Successfully created database tables
+2024-11-22 08:39:06,173 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:39:06,177 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:41:05,471 [INFO] root:70: Logging configured successfully
+2024-11-22 08:41:05,472 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:41:05,509 [INFO] app:60: Successfully created database tables
+2024-11-22 08:41:05,525 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-22 08:41:05,525 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-22 08:41:05,527 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:41:06,819 [INFO] root:70: Logging configured successfully
+2024-11-22 08:41:06,819 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:41:06,846 [INFO] app:60: Successfully created database tables
+2024-11-22 08:41:06,859 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:41:06,865 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:41:40,616 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:41:40] "GET / HTTP/1.1" 200 -
+2024-11-22 08:41:40,942 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:41:40] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:41:40,954 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:41:40] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:41:42,931 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:41:42] "GET /auth/login HTTP/1.1" 200 -
+2024-11-22 08:41:43,069 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:41:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:41:43,080 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:41:43] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:42:02,409 [ERROR] routes.auth:57: Error in login route: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2024-11-22 08:42:02,413 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:42:02] "POST /auth/login HTTP/1.1" 200 -
+2024-11-22 08:42:02,481 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:42:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:42:02,490 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:42:02] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:42:08,430 [ERROR] routes.auth:101: Error in register route: 'form' is undefined
+2024-11-22 08:42:08,450 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:42:08] "[35m[1mGET /auth/register HTTP/1.1[0m" 500 -
+2024-11-22 08:42:08,578 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:42:08] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-11-22 08:42:08,583 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:42:08] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-11-22 08:42:09,154 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:42:09] "[36mGET /auth/register?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-11-22 08:43:12,353 [INFO] werkzeug:187:  * Detected change in '/home/monk/Documents/capstone/income-tax-calculator (copy)/forms/auth_forms.py', reloading
+2024-11-22 08:43:12,605 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:43:13,141 [INFO] root:70: Logging configured successfully
+2024-11-22 08:43:13,142 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:43:13,157 [INFO] app:60: Successfully created database tables
+2024-11-22 08:43:13,164 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:43:13,167 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:43:30,318 [INFO] werkzeug:187:  * Detected change in '/home/monk/Documents/capstone/income-tax-calculator (copy)/routes/auth.py', reloading
+2024-11-22 08:43:30,547 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:43:31,091 [INFO] root:70: Logging configured successfully
+2024-11-22 08:43:31,092 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:43:31,108 [INFO] app:60: Successfully created database tables
+2024-11-22 08:43:31,114 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:43:31,117 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:45:15,465 [INFO] root:70: Logging configured successfully
+2024-11-22 08:45:15,465 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:45:15,493 [INFO] app:60: Successfully created database tables
+2024-11-22 08:45:15,508 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-22 08:45:15,508 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-22 08:45:15,509 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:45:16,498 [INFO] root:70: Logging configured successfully
+2024-11-22 08:45:16,499 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:45:16,527 [INFO] app:60: Successfully created database tables
+2024-11-22 08:45:16,538 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:45:16,542 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:45:38,645 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:45:38] "GET / HTTP/1.1" 200 -
+2024-11-22 08:45:39,116 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:45:39] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:45:39,117 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:45:39] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:45:41,180 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:45:41] "GET /auth/register HTTP/1.1" 200 -
+2024-11-22 08:45:41,346 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:45:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:45:41,368 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:45:41] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:46:18,509 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:46:18] "POST /auth/register HTTP/1.1" 200 -
+2024-11-22 08:46:18,903 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:46:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:46:18,993 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:46:18] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:46:32,263 [ERROR] routes.auth:96: Error in register route: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2024-11-22 08:46:32,272 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:46:32] "POST /auth/register HTTP/1.1" 200 -
+2024-11-22 08:46:32,341 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:46:32] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:46:32,344 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:46:32] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:48:03,579 [INFO] werkzeug:187:  * Detected change in '/home/monk/Documents/capstone/income-tax-calculator (copy)/routes/auth.py', reloading
+2024-11-22 08:48:03,830 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:48:04,361 [INFO] root:70: Logging configured successfully
+2024-11-22 08:48:04,362 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:48:04,376 [INFO] app:60: Successfully created database tables
+2024-11-22 08:48:04,382 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:48:04,387 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:48:25,575 [INFO] werkzeug:187:  * Detected change in '/home/monk/Documents/capstone/income-tax-calculator (copy)/models.py', reloading
+2024-11-22 08:48:25,798 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:48:26,352 [INFO] root:70: Logging configured successfully
+2024-11-22 08:48:26,353 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:48:26,369 [INFO] app:60: Successfully created database tables
+2024-11-22 08:48:26,375 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:48:26,378 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:49:56,613 [INFO] root:70: Logging configured successfully
+2024-11-22 08:49:56,613 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:49:56,640 [INFO] app:60: Successfully created database tables
+2024-11-22 08:49:56,653 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-22 08:49:56,653 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-22 08:49:56,655 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:49:57,603 [INFO] root:70: Logging configured successfully
+2024-11-22 08:49:57,603 [INFO] app:38: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:49:57,630 [INFO] app:60: Successfully created database tables
+2024-11-22 08:49:57,641 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:49:57,646 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:50:21,755 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:21] "GET / HTTP/1.1" 200 -
+2024-11-22 08:50:22,132 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:22] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:50:22,135 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:50:24,238 [INFO] routes.auth:69: Processing registration form. Method: GET
+2024-11-22 08:50:24,261 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:24] "GET /auth/register HTTP/1.1" 200 -
+2024-11-22 08:50:24,373 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:50:24,387 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:24] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:50:43,221 [INFO] routes.auth:69: Processing registration form. Method: POST
+2024-11-22 08:50:43,283 [INFO] routes.auth:72: Form validated. Email: wepen60285@gitated.com
+2024-11-22 08:50:43,298 [ERROR] routes.auth:107: Error in register route: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+Traceback (most recent call last):
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/routes/auth.py", line 75, in register
+    existing_user = Employee.query.filter_by(email=form.email.data).first()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2748, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2178, in _execute_internal
+    bind = self.get_bind(**bind_arguments)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask_sqlalchemy/session.py", line 53, in get_bind
+    engines = self._db.engines
+              ^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/flask_sqlalchemy/extension.py", line 690, in engines
+    raise RuntimeError(
+RuntimeError: The current Flask app is not registered with this 'SQLAlchemy' instance. Did you forget to call 'init_app', or did you create multiple 'SQLAlchemy' instances?
+2024-11-22 08:50:43,308 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:43] "POST /auth/register HTTP/1.1" 200 -
+2024-11-22 08:50:43,380 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:50:43,381 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:50:43] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:52:14,304 [INFO] werkzeug:187:  * Detected change in '/home/monk/Documents/capstone/income-tax-calculator (copy)/app.py', reloading
+2024-11-22 08:52:14,627 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:52:15,226 [INFO] root:70: Logging configured successfully
+2024-11-22 08:52:15,227 [INFO] app:36: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:52:15,272 [INFO] app:58: Successfully created database tables
+2024-11-22 08:52:15,280 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:52:15,284 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:52:34,465 [INFO] werkzeug:187:  * Detected change in '/home/monk/Documents/capstone/income-tax-calculator (copy)/config/config.py', reloading
+2024-11-22 08:52:34,719 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:52:35,251 [INFO] root:70: Logging configured successfully
+2024-11-22 08:52:35,251 [INFO] app:36: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:52:35,267 [ERROR] app:60: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:52:35,272 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:52:35,275 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:53:55,942 [INFO] root:70: Logging configured successfully
+2024-11-22 08:53:55,943 [INFO] app:36: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:53:55,979 [ERROR] app:60: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:53:55,996 [INFO] werkzeug:187: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-11-22 08:53:55,996 [INFO] werkzeug:187: [33mPress CTRL+C to quit[0m
+2024-11-22 08:53:55,998 [INFO] werkzeug:187:  * Restarting with stat
+2024-11-22 08:53:56,949 [INFO] root:70: Logging configured successfully
+2024-11-22 08:53:56,949 [INFO] app:36: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 08:53:56,977 [ERROR] app:60: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:53:56,988 [WARNING] werkzeug:187:  * Debugger is active!
+2024-11-22 08:53:56,993 [INFO] werkzeug:187:  * Debugger PIN: 144-201-038
+2024-11-22 08:54:21,659 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:21] "GET / HTTP/1.1" 200 -
+2024-11-22 08:54:22,074 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:54:22,160 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:22] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:54:27,628 [INFO] routes.auth:69: Processing registration form. Method: GET
+2024-11-22 08:54:27,655 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:27] "GET /auth/register HTTP/1.1" 200 -
+2024-11-22 08:54:27,777 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:27] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:54:27,784 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:27] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 08:54:46,131 [INFO] routes.auth:69: Processing registration form. Method: POST
+2024-11-22 08:54:46,188 [INFO] routes.auth:72: Form validated. Email: wepen60285@gitated.com
+2024-11-22 08:54:46,206 [ERROR] routes.auth:107: Error in register route: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Traceback (most recent call last):
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3292, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 167, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 678, in __init__
+    self.__connect()
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/routes/auth.py", line 75, in register
+    existing_user = Employee.query.filter_by(email=form.email.data).first()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2748, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/query.py", line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2308, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2180, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2047, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1143, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3268, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2430, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3292, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 452, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 1269, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 716, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 169, in _do_get
+    with util.safe_reraise():
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 167, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 393, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 678, in __init__
+    self.__connect()
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 902, in __connect
+    with util.safe_reraise():
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 898, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 637, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/monk/Documents/capstone/income-tax-calculator (copy)/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 616, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 08:54:46,221 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:46] "POST /auth/register HTTP/1.1" 200 -
+2024-11-22 08:54:46,285 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:46] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2024-11-22 08:54:46,294 [INFO] werkzeug:187: 127.0.0.1 - - [22/Nov/2024 08:54:46] "[36mGET /static/js/common.js HTTP/1.1[0m" 304 -
+2024-11-22 09:07:59,421 [INFO] root:70: Logging configured successfully
+2024-11-22 09:07:59,423 [INFO] app:39: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 09:07:59,463 [ERROR] app:64: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 09:08:23,744 [INFO] root:70: Logging configured successfully
+2024-11-22 09:08:23,745 [INFO] app:39: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 09:08:23,760 [ERROR] app:64: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-11-22 09:08:23,764 [ERROR] flask_migrate:113: Error: Directory migrations already exists and is not empty
+2024-11-22 09:08:32,030 [INFO] root:70: Logging configured successfully
+2024-11-22 09:08:32,031 [INFO] app:39: Instance path: /home/monk/Documents/capstone/income-tax-calculator (copy)/instance
+2024-11-22 09:08:32,045 [ERROR] app:64: Error creating database tables: (sqlite3.OperationalError) unable to open database file
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

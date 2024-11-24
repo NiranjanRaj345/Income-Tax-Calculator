@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tax Calculation History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .filters {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f8f9fa;
+        }
+        .footer {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 30px;
+        }
+        .filter-info {
+            color: #666;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tax Calculation History Report</h1>
+    </div>
+
+    <div class="filter-info">
+        {% if start_date or end_date %}
+        <p><strong>Date Range:</strong> 
+            {% if start_date %}From {{ start_date }}{% endif %}
+            {% if end_date %}to {{ end_date }}{% endif %}
+        </p>
+        {% endif %}
+    </div>
+
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Gross Income</th>
+                    <th>Tax Amount</th>
+                    <th>Net Income</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for calc in calculations %}
+                <tr>
+                    <td>{{ calc.name }}</td>
+                    <td>{{ calc.date }}</td>
+                    <td>{{ calc.time }}</td>
+                    <td>₹{{ "{:,.2f}".format(calc.gross_income) }}</td>
+                    <td>₹{{ "{:,.2f}".format(calc.tax_amount) }}</td>
+                    <td>₹{{ "{:,.2f}".format(calc.net_income) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p>Generated on {{ generated_at.strftime('%Y-%m-%d %H:%M:%S') }}</p>
+    </div>
+</body>
+</html>
