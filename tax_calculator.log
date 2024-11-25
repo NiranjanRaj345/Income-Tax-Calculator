@@ -343,3 +343,10 @@ NameError: name 'TaxRule' is not defined
 2024-11-25 00:26:32,799 - routes.employee - INFO - Tax calculation saved successfully
 2024-11-25 00:26:46,809 - routes.employee - INFO - Dashboard accessing database at: /home/monk/Documents/capstone/income-tax-calculator (copy)/data/tax_calculator.db
 2024-11-25 00:26:46,810 - routes.employee - INFO - Retrieved 4 recent calculations
+2024-11-25 13:41:19,862 - routes.employee - INFO - Dashboard accessing database at: /home/monk/Documents/GitHub/income-tax-calculator/data/tax_calculator.db
+2024-11-25 13:41:19,863 - routes.employee - INFO - Retrieved 4 recent calculations
+2024-11-25 13:41:35,408 - routes.employee - INFO - Attempting to save tax calculation...
+2024-11-25 13:41:35,408 - routes.employee - INFO - Database path: /home/monk/Documents/GitHub/income-tax-calculator/data/tax_calculator.db
+2024-11-25 13:41:35,411 - routes.employee - INFO - Tax calculation saved successfully
+2024-11-25 13:41:45,238 - routes.employee - INFO - Dashboard accessing database at: /home/monk/Documents/GitHub/income-tax-calculator/data/tax_calculator.db
+2024-11-25 13:41:45,240 - routes.employee - INFO - Retrieved 5 recent calculations
